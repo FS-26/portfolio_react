@@ -1,0 +1,89 @@
+nav {
+  background-color: #162051;
+  width: 100%;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2em;
+  /* margin: 0 5px; */
+  border-bottom: 5px solid transparent;
+}
+
+nav ul li:hover {
+  background-color: #4a5588;
+  border-bottom: 5px solid #f6b977;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav button {
+  all: unset;
+  color: white;
+  padding: 10px;
+  font-size: 4em;
+}
+
+nav h2,
+nav button {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav h2,
+  nav button {
+    display: block;
+  }
+
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  nav h2 {
+    text-align: left;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .active-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 73px;
+    justify-content: center;
+    width: calc(100% - 20px);
+    background-color: #162051bc;
+    animation: showMenu 0.5s ease-in forwards;
+  }
+
+  nav ul li:hover {
+    background-color: #4a5588;
+  }
+}
+
+@keyframes showMenu {
+  from {
+    left: -100%;
+    height: 0;
+  }
+  to {
+    left: 10px;
+    bottom: 73px;
+    height: 288px;
+  }
+}

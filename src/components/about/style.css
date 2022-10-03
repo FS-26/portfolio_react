@@ -1,0 +1,113 @@
+#about {
+  padding: 70px 100px;
+  min-height: 70vh;
+}
+
+#about h2 {
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 2.3rem;
+}
+
+#about .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 55px auto;
+  justify-content: space-between;
+}
+#about .profile {
+  flex: 0 1 25%;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0px 1px 4px gray;
+}
+
+#about .description {
+  flex: 1 0 65%;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  overflow: hidden;
+  min-height: 200px;
+  max-width: 60%;
+}
+
+#about .desc-header {
+  background-color: #f7f7f7;
+  padding: 7px 12px;
+  border-bottom: 1px solid gainsboro;
+}
+
+#about .desc-body {
+  padding: 10px;
+}
+
+.red {
+  background-color: #ed4c5c;
+}
+.green {
+  background-color: #78b159;
+}
+
+.yellow {
+  background-color: #fdcb58;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#about .desc-body h3 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+#about .desc-body p {
+  font-size: 1.3rem;
+  line-height: 25px;
+  text-align: justify;
+}
+
+#about .technos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+#about .technos img {
+  width: 30%;
+}
+
+@media screen and (max-width: 800px) {
+  #about {
+    padding: 10px;
+    margin-top: 30px;
+    height: auto;
+  }
+  #about .row {
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #about .profile {
+    max-width: 70%;
+  }
+  #about .description {
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    overflow: hidden;
+    min-height: 200px;
+    max-width: 100%;
+  }
+}
